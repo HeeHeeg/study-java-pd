@@ -10,8 +10,8 @@ public class Test1 {
 
     public static void main(String[] args) {
         sc = new Scanner(System.in);
-            input();
-        }
+        input();
+    }
 
     //이 안에서만 쓸거면 public을 붙이지 않아도 되긴 한다.
 
@@ -25,6 +25,7 @@ public class Test1 {
 
 
     }
+
     public static void insert() {     // 위에가 static이기 때문에 여기에 static없이 쓸 수 없다.
         System.out.println("영단어 입력");
         String key = sc.nextLine();
@@ -34,6 +35,7 @@ public class Test1 {
         input();
 
     }
+
     public static void delete() {
         // 키를 보여주고
         // 키를 입력하고 그거(value) 삭제
@@ -44,50 +46,60 @@ public class Test1 {
             System.out.println("키가 없어요");
         input();
     }
+
     public static void update() {
         // 키를 보여주고
         // 키를 입력하고 그거(value) 업데이트
         System.out.println("업데이트 할 단어 입력");
-        String  key = sc.nextLine();
+        String key = sc.nextLine();
         System.out.println("바꿀내용 입력");
         String value = sc.nextLine();
         if (isValid(key)) map.put(key, value);
         input();
     }
+
     public static void find() {
         // 키를 보여주고
         // 키를 입력하고 그거(value) 찾기
         System.out.println("키 입력");
         String key = sc.nextLine();
         if (isValid(key))
-          System.out.println("key : " + key + ", value : " + map.get(key));
+            System.out.println("key : " + key + ", value : " + map.get(key));
         input();
     }
+
     public static boolean isValid(String key) {
         if (map.containsKey(key))
             return true;
         System.out.println(key + "로된 단어는 없습니다.");
         return false;
     }
+
     public static boolean isValid(String key, boolean isInsert) {
         if (!(map.containsKey(key))) return true;
         System.out.println(key + "는" + map.get(key) + "라고 있는 단어입니다.");
         return false;
     }
-    public static void modeSelect(int mode){
-        switch(mode){
+
+    public static void modeSelect(int mode) {
+        switch (mode) {
             case 1:
-                insert(); break;
+                insert();
+                break;
             case 2:
-                delete(); break;
+                delete();
+                break;
             case 3:
-                update(); break;
+                update();
+                break;
             case 4:
-                find(); break;
+                find();
+                break;
             case 5:
                 break;
             default:
-                input(); break;
+                input();
+                break;
 
         }
 

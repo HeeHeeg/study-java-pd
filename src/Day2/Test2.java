@@ -15,7 +15,7 @@ public class Test2 {
          만약 짝수면 그 수를 출력을 하고
          홀수이면서 더한 값이 20이 넘으면
          끝내고 아니면 더하고 더한 값을 출력하라.*/
-
+//
         for (int i = 0; i < arr.length; i++) {
 //            boolean isBreak = sum > 20;
             if (sum > 20) {
