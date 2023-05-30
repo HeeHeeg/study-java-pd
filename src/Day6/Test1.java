@@ -9,7 +9,7 @@ public class Test1 {
         stack.add(1);
         stack.add(2);
         stack.add(3);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 1; i++) {
 //            System.out.println(stack.pop());
 //            System.out.println(stack.peek());
 //            pop은 스택에서 하나를 제거하고 하나를 꺼내는것.
