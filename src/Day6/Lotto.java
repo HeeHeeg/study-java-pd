@@ -32,7 +32,7 @@ public class Lotto {
 //        }
 //            System.out.println(set.size());
 /*
-        for (Integer j : set                  //순서없는것은 foreach로 찍으면됨. 이렇게 하면 2, 1, 2가 모두 출려됨.
+        for (Integer i : set                  //순서없는것은 foreach로 찍으면됨. 이렇게 하면 2, 1, 2가 모두 출려됨.
         ) {
             System.out.printf("%d", j);          // 2 1 2 모두 출력
         }*/
