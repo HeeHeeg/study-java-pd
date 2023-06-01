@@ -1,11 +1,19 @@
 package Day8;
 
+import Day8.controller.Controller;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //싱글톤
+        Scanner sc = new Scanner(System.in);
+        Controller controller = new Controller(sc);
+        while (true) controller.selectMode();
+
         List<Integer> list = new ArrayList<>();
         //데이터는 원본 유지하고 새로운걸 만들어야 한다.
         //불변성
